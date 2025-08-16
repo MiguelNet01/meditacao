@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c9cfc8;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+/* Cabeçalho */
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: #3b7d5b;
+}
+
+header p{
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Seção principal */
+
+.intro{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+
+/* Botão */
+
+.btn{
+    display: inline-block;
+    background-color: #3b7d5b;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #2c5f44;
+     transform: scale(1.05);
+}
+
+.intro img{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.2s ease forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform:  translateY(0);
+    }
+}
+
+
+/* Área de contato */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.formulario input, 
+.formulario textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+footer{
+    background-color: #3b7d5b;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+.footer-content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-content .socials a{
+    color: #a9d5b4;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-content .socials a:hover{
+    color: #e5f0e1;
+}
+
+
+
+/* parte celualar */
+
+
+
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+ }
+
+ header h1{
+    font-size: 2rem;
+ }
+
+ header p{
+    font-size: 1rem;
+ }
+ .intro{
+    padding: 0 10px;
+ }
+
+ .btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+ }
+
+ .formulario input,
+ .formulario textarea{
+    font-size: 1rem;
+ }
+
+ footer{
+    font-size: 0.8rem;
+    padding: 10px;
+ }
+  } 
